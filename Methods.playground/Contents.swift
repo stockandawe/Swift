@@ -12,11 +12,11 @@ class Person {
     }
     
     func say(phrase: String) {
-        println("\(self.firstName) \(self.lastName)says \(phrase)")
+        print("\(self.firstName) \(self.lastName) says \(phrase)")
     }
     
     func say(phrase: String, times: Int) {
-        for i in 1...times {
+        for _ in 1...times {
             say(phrase)
         }
     }
