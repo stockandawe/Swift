@@ -3,14 +3,14 @@
 import UIKit
 
 func say(phrase: String) {
-    println(phrase)
+    print(phrase)
 }
 
 say ("Hello there")
 
 func say(phrase: String, times: Int) {
     for i in 1...times {
-        println(phrase)
+        print(phrase)
     }
 }
 
@@ -20,7 +20,7 @@ say("Hey there", 10)
 
 func say(#phrase: String, #times: Int) {
     for i in 1...times {
-        println(phrase)
+        print(phrase)
     }
 }
 
@@ -30,7 +30,7 @@ say(phrase: "Hola Amigo", times: 5)
 
 func sayArgNames(phrase str: String, times n: Int) {
     for i in 1...n {
-        println(str)
+        print(str)
     }
 }
 

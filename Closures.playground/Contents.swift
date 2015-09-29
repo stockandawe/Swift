@@ -6,13 +6,13 @@ let names = ["AAA", "BB", "CCCCCCC", "DDDDD", "EEEEE"]
 
 let filtered = names.filter() { $0.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) < 3 }
 
-println(filtered)
+print(filtered)
 
 func isShortName(name: String) -> Bool {
     return name.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) < 4
 }
 
-println(names.filter(isShortName))
+print(names.filter(isShortName))
 
 func nameWithMaxLenght(max: Int = 3) -> (String) -> Bool {
     return { (name: String) in
@@ -20,7 +20,7 @@ func nameWithMaxLenght(max: Int = 3) -> (String) -> Bool {
     }
 }
 
-println(names.filter(nameWithMaxLenght(max: 4)))
+print(names.filter(nameWithMaxLenght(max: 4)))
 
 // Uses the default value of max = 3
-println(names.filter(nameWithMaxLenght()))
+print(names.filter(nameWithMaxLenght()))

@@ -19,38 +19,38 @@ city = "San Francisco"
 
 if name != nil {
     // This will evaluate to "name is Optional("Alex")"
-    println("name is \(name)")
+    print("name is \(name)")
 } else {
-    println("name is nil")
+    print("name is nil")
 }
 
 // Use the ! operator to get to the assigned value of the name
 if name != nil {
     // This will evaluate to "name is Alex")
-    println("name is \(name!)")
+    print("name is \(name!)")
 } else {
-    println("name is nil")
+    print("name is nil")
 }
 
 
 if job != nil {
     // This will evaluate to "job is iOS Developer")
-    println("job is \(job)")
+    print("job is \(job)")
 } else {
-    println("job is nil")
+    print("job is nil")
 }
 
 // You cannot do city != nil in this case.
 // You cannot also use the city variable before it has been intialized.
-println("city is \(city)")
+print("city is \(city)")
 
 
 // Optional-Binding-Syntax
 // Combining checking for the nil and the use of the local constant in one step
 if let theName = name {
-    println("name is \(theName)")
+    print("name is \(theName)")
 } else {
-    println("name is nil")
+    print("name is nil")
 }
 
 // nil-coalescing-operator

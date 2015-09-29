@@ -12,11 +12,11 @@ class Person {
     }
     
     func say(phrase: String) {
-        println("\(firstName) \(lastName) says '\(phrase)'")
+        print("\(firstName) \(lastName) says '\(phrase)'")
     }
     
     class func say(phrase: String) {
-        println("...and the people say '\(phrase)'")
+        print("...and the people say '\(phrase)'")
     }
 }
 let p1 = Person(firstName: "Foo", lastName: "Bar")
